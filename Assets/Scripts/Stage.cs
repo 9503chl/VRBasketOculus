@@ -11,23 +11,23 @@ public class Stage : MonoBehaviour
         if (this.gameObject.name == "RetryB")
         {
             StageSound.Play();
-            Invoke("Retry", 0.5f);
+            Invoke("Retry", 0.7f);
         }
         if (this.gameObject.name == "EndB")
         {
             StageSound.Play();
-            Invoke("End1", 0.5f);
+            Invoke("End1", 0.7f);
         }
         if (this.gameObject.name == "NextB")
         {
             StageSound.Play();
-            Invoke("NextStage", 0.5f);
+            Invoke("NextStage", 0.7f);
         }
         
     }
     void Retry()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene(gameObject.scene.name);
     }
     void End1()
     {

@@ -11,7 +11,7 @@ public class Goal : MonoBehaviour
     [SerializeField] AudioSource ThreeptsGoalAudioSource;
     Score score;
     float iTime = 60.0f;
-    float delay = 0.7f;
+    float delay = 0.5f;
     void Start()
     {
         var gameObj = GameObject.FindWithTag("Score");
@@ -20,7 +20,7 @@ public class Goal : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (delay >= 0.7f) {
+        if (delay >= 0.5f) {
             score.AddScore(point, iTime);
 
             if (iTime <= 15.0f)

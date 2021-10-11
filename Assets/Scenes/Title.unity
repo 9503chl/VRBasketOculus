@@ -1351,12 +1351,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &699031620 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4270672697781432090, guid: 086cb98d2f69dd24b8eaee10239df060,
-    type: 3}
-  m_PrefabInstance: {fileID: 1467210209}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &716403812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1f9c75d0f4e0a314393e371c9102ff7f,
@@ -2277,6 +2271,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 945681317400570155, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550881432780958358, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4270672697787217076, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}
       propertyPath: m_controller
@@ -2371,7 +2375,7 @@ PrefabInstance:
         type: 3}
       propertyPath: firePos
       value: 
-      objectReference: {fileID: 699031620}
+      objectReference: {fileID: 0}
     - target: {fileID: 5333104717703921906, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2392,8 +2396,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5461719595661897039, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: firePos
+      value: 
+      objectReference: {fileID: 1467210210}
+    - target: {fileID: 5783634266892707626, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8358981063875142229, guid: 086cb98d2f69dd24b8eaee10239df060, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 086cb98d2f69dd24b8eaee10239df060, type: 3}
+--- !u!4 &1467210210 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1550881432780958358, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 1467210209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1471213511
 GameObject:
   m_ObjectHideFlags: 0
