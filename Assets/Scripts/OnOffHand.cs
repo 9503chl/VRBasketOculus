@@ -10,10 +10,9 @@ public class OnOffHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(this.transform.rotation.eulerAngles.x);
-        if (this.transform.rotation.eulerAngles.x <= 340  && this.transform.rotation.eulerAngles.x >= 85)
+        if (this.transform.rotation.eulerAngles.x <= 340)
         {
-            Onhand.SetActive(true);//공을 든거
+            Onhand.SetActive(true);
             Offhand.SetActive(false);
         }
         else
