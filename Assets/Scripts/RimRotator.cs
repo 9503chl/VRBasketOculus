@@ -8,6 +8,7 @@ public class RimRotator : MonoBehaviour
     float time1 = 0.0f;
     float time2 = 5.2f;
     float px, pz = 0.0f;
+    public Transform targetPoint;
     bool fstart = true;
     void Update()
     {
@@ -41,6 +42,11 @@ public class RimRotator : MonoBehaviour
                 transform.Translate(Vector3.left * 0.3f * Time.deltaTime);
             }
             if (time1 >= 3.0) time1 = 0.0f; //초기화
+        }
+        float eDistance = (targetPoint.position - transform.position).sqrMagnitude;
+        if (eDistance >= 200.0f || eDistance <= 20.0f) //멀어지면 다시 제자리
+        {
+            transform.position = new Vector3(-0.01f, 1.5f, 2.61f);
         }
     }
 }
